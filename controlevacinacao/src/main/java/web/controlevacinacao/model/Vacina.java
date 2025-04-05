@@ -2,6 +2,8 @@ package web.controlevacinacao.model;
 
 import java.io.Serializable;
 
+import org.hibernate.annotations.DynamicUpdate;
+
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -10,7 +12,8 @@ import jakarta.persistence.SequenceGenerator;
 import jakarta.persistence.Table;
 
 @Entity
-@Table(name="vacina")
+@Table(name = "vacina")
+@DynamicUpdate
 public class Vacina implements Serializable {
 
 	private static final long serialVersionUID = 7562368353372595992L;
@@ -22,6 +25,9 @@ public class Vacina implements Serializable {
 	private String nome;
 	private String descricao;
 
+	public Vacina() {
+		
+	}
 	public Long getCodigo() {
 		return codigo;
 	}

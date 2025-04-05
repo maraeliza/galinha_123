@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html
+  lang="pt-BR"
+  layout:decorate="~{layout/layoutpadrao}"
+  xmlns:th="http://www.thymeleaf.org"
+  xmlns:layout="http://www.thymeleaf.org"
+>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+    />
+    <title>Vacinas</title>
+  </head>
+
+  <body>
+    <!-- conteudo principal -->
+    <main
+      layout:fragment="conteudo"
+      class="flex f
+      lex-col align-middle w-full m-10"
+    >
+     <h2 class="text-2xl w-2/3 ms-16 text-slate-800 mr-1.5 " th:text="${msgLabel}"></h2>
+
+  </body>
+</html>

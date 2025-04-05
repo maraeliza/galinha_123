@@ -30,9 +30,9 @@
       <!-- Opcoes do 2o Item Menu -->
       <div x-show="open" class="space-y-4 ps-10">
         <!-- 1a Opcao -->
-        <div th:replace="~{layout/fragments/menu-item-option :: menu-item-option('Cadastrar', '/', ~{::#cadastrar-icon})}"></div>
+        <div th:replace="~{layout/fragments/menu-item-option :: menu-item-option('Cadastrar', @{/vacinas/cadastrar}, ~{::#cadastrar-icon})}"></div>
         <!-- 2a Opcao -->
-        <div th:replace="~{layout/fragments/menu-item-option :: menu-item-option('Pesquisar', '/', ~{::#pesquisar-icon})}"></div>
+        <div th:replace="~{layout/fragments/menu-item-option :: menu-item-option('Pesquisar', @{/vacinas/pesquisar}, ~{::#pesquisar-icon})}"></div>
         <!-- 3a Opcao -->
         <div th:replace="~{layout/fragments/menu-item-option :: menu-item-option('Todas', @{/vacinas}, ~{::#pesquisar-icon})}"></div>
       </div>
